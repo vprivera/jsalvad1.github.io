@@ -103,16 +103,17 @@ ul {
       padding: 10px;
     }
 
-  .grid-container-element { 
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-gap: 20px; 
-    border: 1px solid black; 
-    width: 50%; 
-} 
-.grid-child-element { 
-    margin: 10px; 
-    border: 1px solid red; 
+.parent {
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+.child {
+  display: inline-block;
+  border: 1px solid red;
+  padding: 1rem 1rem;
+  vertical-align: middle;
 }
   </style>
 </head>
@@ -132,6 +133,11 @@ ul {
 </ul>
 </nav>
   </div>
+
+<div class='parent'>
+  <div class='child'>child 1</div>
+  <div class='child'>child 2</div>
+</div>
   <div class="row">
     <div class="column">
        <div id=content>
