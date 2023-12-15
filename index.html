@@ -102,6 +102,18 @@ ul {
       text-align: center;
       padding: 10px;
     }
+
+  .grid-container-element { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 20px; 
+    border: 1px solid black; 
+    width: 50%; 
+} 
+.grid-child-element { 
+    margin: 10px; 
+    border: 1px solid red; 
+}
   </style>
 </head>
 <body>
@@ -113,14 +125,17 @@ ul {
 <ul id=nav>
 <li id="navorientation"><a href="contacts.html"><img src="contacts.png" alt="Contacts"></a> &nbsp;</li>
 <li id="navorientation"><a href="accommodations.html"><img src="accommodations.png" alt="Accommodations"></a> &nbsp;</li>
-<li id="navorientation"><a href="spots.html"><img src="Spots.png" alt="Spots and Activities"></a> &nbsp;</li>
+<li id="navorientation"><a href="spots.html"><img src="spots.png" alt="Spots and Activities"></a> &nbsp;</li>
 <li id="navorientation"><a href="fdf.html"><img src="FDF.png" alt="Food, Drinks, and Fun!"></a></a> &nbsp;</li>
 <li id="navorientation"><a href="summon.html"><img src="summon.png" alt="Summon Your Thunder!"></a> &nbsp;</li>
 <li id="navorientation"><a href="index.html"><img src="home.png" alt="Home"></a> &nbsp;</li>
 </ul>
 </nav>
   </div>
-
+<div class="grid-container-element">
+    <div class="grid-child-element purple">Grid Column 1</div>
+    <div class="grid-child-element green">Grid Column 2</div
+</div>
   <div class="row">
     <div class="column">
        <div id=content>
