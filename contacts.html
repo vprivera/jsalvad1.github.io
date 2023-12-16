@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Thunder Bay Explore!</title>
+    <title>Thunde Bay Explore!</title>
     <style>
 
+form { background-color: #EAEAEA; 
+       font-family: Arial, sans-serif; 
+       width: 350px; padding: 10px; }
+label { float: left; clear: left; display: block; 
+        width: 100px; padding-right: 10px;
+        margin-top: 10px; text-align: right; }
+input { display: block; margin-top: 10px; }
+textarea { display: block; margin-top: 10px; }
+input[type="submit"] { margin-left: 110px; }
 
         body {background-color: #D3D3D3D3;
-            background-image: linear-gradient(to bottom, #FFFFFF, #D3D3D3D3);
+            background-image: url (support.jpg);
             background-repeat: no-repeat;}
         h3 { background-color: #FFFFFF;
             opacity: 0.6;
@@ -29,13 +38,14 @@
         }
 
         #div1 {
-            width: 50.4%;
+            width: 20%;
             background-color: white;
-            float: left;
+            margin: 0 auto;
         }
         #div2 {
             background-color: white;
-            width: 49.6%;
+            background-image: url(support.jpg);
+            width: 30%;
             float: right;
         }
         #div3 {background-color: white;
@@ -43,8 +53,7 @@
             margin: 0 auto;
         }
         #bar { background-color: #F8F8FF; }
-        #content { background-image: url(ski.jpg);
-            background-repeat: no-repeat;
+        #content {
             float: right;
             width: 1040px;
             height: 580px;
@@ -179,17 +188,51 @@
     </div>
     <div class="content">
         <div id="div1">
-            <div id=content>
-                <h3 align="right">Winter is coming!</h3>
-                <p align="right">Experience the thrills and no frills action of the Thunder Bay Ski scene!</p>
+          <h3>Active City Directory</h3>
+  <table style="border-collapse: collapse;">
+  <tr style="border: 1px solid black;">
+    <th style="border: 1px solid black;">Name</th>
+    <th style="border: 1px solid black;">Address</th>
+    <th style="border: 1px solid black;">Phone Number</th>
+  </tr>
+  <tr style="border: 1px solid black;">
+    <td style="border: 1px solid black;">Thunder Bay Police Service</td>
+    <td style="border: 1px solid black;">1200 Balmoral Street</td>
+    <td style="border: 1px solid black;">807 684 1200</td>
+  </tr>
+  <tr style="border: 1px solid black;">
+    <td style="border: 1px solid black;">Thunder Bay Fire Station James</td>
+    <td style="border: 1px solid black;">501 Churchill Dr. W</td>
+    <td style="border: 1px solid black;">807 577 8079</td>
+  </tr>
+  <tr style="border: 1px solid black;">
+    <td style="border: 1px solid black;">Thunder Bay Regional Hospital</td>
+    <td style="border: 1px solid black;">984 Oliver Road</td>
+    <td style="border: 1px solid black;">807 684 6000</td>
+  </tr>
+  <tr style="border: 1px solid black;">
+    <td style="border: 1px solid black;">Ramada Thunder Bay Airlane Hotel</td>
+    <td style="border: 1px solid black;">698 Arthur Street W</td>
+    <td style="border: 1px solid black;">807 473 1600</td>
+  </tr>
+</table>
+                <h1 align="center">Contact Us</h1>
+<form> 
+ <label for="myName">Name:</label> 
+ <input type="text" name="myName" id="myName"> 
+ <label for="myEmail">E-mail:</label> 
+ <input type="text" name="myEmail" id="myEmail"> 
+ <label for="myComments">Comments:</label> 
+ <textarea name="myComments" id="myComments"    rows="2" cols="20"></textarea> 
+ <input type="submit" value="Submit"> 
+</form>
+<div id="div2">
+
+
+        </div>
             </div>
         </div>
-        <div id="div2">
-            <p>Thunder Bay, Ontario, Canada is a beautiful place to visit in the winter.<a href="#"id="more">More</a></p>
-            <div id="details">
-                <p>The city is one of Canada’s best winter destinations. It is surrounded by the impressive Nor’wester mountains, which provide a beautiful backdrop to the city and world-class ski facilities. The winters in Thunder Bay can be quite chilly and snowy, but that is exactly why the city is a great place to visit in the winter. There are many outdoor activities to enjoy, such as skiing, snowboarding, snowmobiling, snowshoeing, ice climbing, ice fishing, and even snowkiting.</p>
-            </div>
-        </div>
+        
     </div>
 </div>
 <footer>
